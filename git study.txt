@@ -21,3 +21,30 @@ Git Repo?
 **커밋(commit)**이란?
 
 추가한 각각의 체크포인트를 의미함.
+
+### 명령어(git add, git commit, git log)
+
+- **깃 추가**
+    
+    : 커밋에 포함할 변경사항을 저장하거나 하이라이트 하기 위해 사용한다. 
+    
+    기본적인 깃 작업절차: 파일 생성 및 수정 → 파일에 변화 → 커밋
+    
+    - `git add` 파일명
+        
+        예시) `git add` 옮길파일 → 스테이지에 들어감 → 커밋
+        
+    - `git add .` 파일명: 한번에 모든 변경사항들을 스테이지에 넣는다.
+- **깃 커밋**: 변경사항 추가
+    - `git commit` 변경사항 추가함. 여기서 vs코드로 설정해놓으면 vs code에 들어가서 설정할 수 있음.
+    - `git commit -m “my message”` : 메세지를 사용하여 커밋. 이때 메시지는 변경사항에 대한 요약이어야 함.
+    - `git commit -a -m “my message”`
+- 커밋 로그 줄이기
+    - `--oneline` = `--pretty=onlie --abbrev-commit`
+- **깃 로그 검색**
+    
+    `git log`: 깃 저장소에 대한 정보들을 검색. (커밋 정보들 볼 수 있음)
+    
+    [커밋해시](https://www.notion.so/Git-GitHub-2a78eff231d64000b18f8d0febf4dffc?pvs=21), 이름, 이메일, 수정날짜가 나옴
+    
+- `code .`: 비쥬얼 코드 열기
